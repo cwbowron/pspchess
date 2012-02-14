@@ -1,0 +1,419 @@
+RELEASE 0.31
+
+client mode keys:
+RTRIGGER = show terminal screen
+START = show terminal screen
+	
+Game Mode option supercedes analysis mode (NORMAL,ANALYSIS,CLIENT)
+	
+Network Framework - Using txt file to mimic network input
+
+On Screen Keyboard Code
+
+tentatively:
+
+DOWN+LTRIGGER - clear input buffer
+
+LEFT/RIGHT - change character frame
+TRIANGLE/CIRCLE/SQUARE/CROSS - select character
+LTRIGGER - backspace
+RTRIGGER - space (1x) / enter (2x)
+UP - toggle shift lock
+SELECT - select quick string
+START - abort / return to game screen from terminal screen
+
+fixed path specific options that required pspchess to located in
+/PSP/GAME/PSPCHESS now you should be able to do the wacky corrupted
+icon removal thingy if you want.
+
+RELEASE 0.30
+	
+FOR THE LOVE OF GOD, DO NOT CALL ME IF YOU CANNOT FIGURE OUT HOW TO
+INSTALL THE PROGRAM.  SEARCH THE WEB ON PSP HOMEBREW.  READ THE
+README.TXT.  UNDER NO CIRCUMSTANCES SHOULD YOU THINK, HEY I SHOULD
+JUST CALL UP CHRIS AND ASK HIM. NO. NO. NO.
+     
+key changes:
+    SQUARE+LTRIGGER: show the text from the imported pgn game
+		     return to game from pgn text view
+		     
+    SQUARE+RTRIGGER: removed (was toggle pondering)
+
+pgn import - parser is not extremely robust but should work in most
+cases
+	
+fixed compiler warnings
+	
+fixed small bug in random playback - if no file was found based on
+original g_background_music_file no random file would be selected.
+
+please share your piece images at: 
+http://www.dcemu.co.uk/vbulletin/showthread.php?t=8514
+	
+RELEASE 0.29b
+
+fixed stupid bug in music - trust gcc -Wall
+	
+RELEASE 0.29
+
+new options to allow you to change the piece images.  You can turn on
+external pieces and set the pieces file to the png of your choice.
+refer to pieces.png for the format.  each piece is 32x32.  must be
+PNG.  If anyone makes some cool pieces, please share them with me and
+other users.  You can email them to chess AT bowron.us.
+
+display option: external pieces (default off)
+display option: pieces file
+
+moved display options to sub option menu
+	
+random mp3 playback - picks random mp3 from /PSP/MUSIC
+options->music options->backgrnd music
+	
+RELEASE 0.28
+	
+castling support in wild5 and fischer random - redid all castling code
+
+mp3 background music (slows down computer a little more than mod file)
+--> switching back and forth and back between mp3 and mod is not working.
+mp3->mod->mp3 and mod->mp3->mod may cause crash.  mod->mp3->mp3 is
+fine. Bottom line:  if you want mp3 music, switch from mod->mp3 and do
+not switch back without restarting pspChess.
+
+selectable background music
+	
+new variants:  wild 5, wild 8, and wild 8a.  See
+http://freechess.org/Help/HelpFiles/wild.html for description
+
+RELEASE 0.27
+	
+new save/load format that supports fischer random (old saves will
+still work)
+	
+new variant: fischer random (does not yet support castling)
+http://en.wikipedia.org/wiki/Fischer_Random_Chess
+	
+variant option
+	
+game options:
+     WHITE (moved from main option screen)
+     BLACK (moved from main option screen)
+     clock (min) - time of game in minutes (ADDED)
+     increment (sec) - increment of clock after each move in seconds. (ADDED)
+
+option mode infra structure changes
+	
+file selector code (for upcoming pgn import)
+
+export PGN uses SAN, better standard SAN (tested with winboard & chesscat)
+	
+RELEASE 0.26
+	
+moves print use modified put char from sdk to display using lower and
+uppercase 
+
+new feature for beginner players (and others):
+
+    option: hilite checks - default off - shows the threatenings piece(s)
+    when in check. (red mask)
+
+    option: show available - default off - shows the possible moves
+    for the piece under the cursor or the selected start piece. (green mask)
+
+    option: show threats - default off - hilite pieces that are
+    currently under threat (blue mask)
+    
+RELEASE 0.25
+	
+properly handle promotions:  computer can choose promotional piece, so
+can player.
+
+option: show moves (show the moves in the current game)
+	to show moves you must either have show options off or show
+	captures off (or both)
+	you can use show moves as coordinates or SAN.  
+	
+reset music if finished playing
+	
+autoload saved options
+	
+save options in options menu
+	
+export pgn exports to file name YYYY_MM_DD_HH_MM.PGN
+	
+print last move in SAN, keep track of moves in SAN
+
+RELEASE 0.24
+
+analysis mode option - when in analysis mode, RTRIGGER will make the
+next move in the analysis stack.  Analysis stack will be moves up to
+the point of switching into analysis mode.  Should also work with
+stored games. 
+
+button change: LTRIGGER goes back only 1 ply.  This makes navigating
+analysis mode easier.
+
+analysis mode displays last 20 moves (plies)
+	
+added donation link to readme.  If you enjoy pspChess and feel like
+sending some money to help support pspChess, awesome.  The paypal name
+should show up as bowronch@msu.edu
+
+https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=bowronch%40msu%2eedu&no_shipping=0&no_note=1&tax=0&currency_code=USD&charset=UTF%2d8&charset=UTF%2d8
+	
+export pgn option in options menu (exports to \PSP\GAME\PSPCHESS\EXPORT.PGN)
+close enough to PGN that winboard will read it.  Don't know about
+other programs.  (It uses 1. e2e4 b8c6 instead of 1. e4 Nc6)
+	
+RELEASE 0.23b
+	
+fixed problem when no background music file available
+	
+RELEASE 0.23
+	
+mikmod background music - put any mikmod compatible file in
+\PSP\GAME\PSPCHESS\BACKGROUND.MOD - thanks to everyone involved in
+mikmod and thanks to Jim Shaw for porting it to psp.
+mikmod post: (http://forums.ps2dev.org/viewtopic.php?t=2540&highlight=mikmod)
+	
+new option: show captures (default: on)
+
+new images (to move, last move, thinking)
+
+fixed loading book issues in load game
+	
+RELEASE 0.22
+	
+new personalities:
+    BCE: original evaluation algorithm
+    BCE-Junior: BCE with stripped out positional features
+    Random: evaluation function returns a random number (takes longer
+    to search because there are fewer cutoffs)
+    	
+ability to add multiple personalities easily
+	to add a personality:
+	   write evaluation function (see evaluate_bce())
+	   add function to g_evaluation_functions
+	   add personality name to g_personality_names
+	you can have personality play each other by setting them up in
+	the options menu
+	   	
+RELEASE 0.21
+	
+cleaned up evaluation code a bit - easier to understand what's going
+on.  If anyone wants to write up another evalation function for a new
+personality, feel free to do so and send me the code.  I would like to
+have selectable opponents in the game. (if you modifiy anything
+outside of evaluate() please use different function names so that I
+can drop it in without name conflicts) 
+	
+passed pawn weights
+	
+removed clear tables options
+	
+opening book changes (probability of move proportionate to frequency)
+- better opening book utilization
+
+removed load book key and menu option
+
+added book loading to reset game
+	
+RELEASE 0.20
+
+REALLY fixed illegal move - related to principal variation storage
+	
+reset to human vs human on checkmate, stalemate, draw
+	
+added psp:black and psp:white to options menu
+	
+removed demo key
+	
+updated pspsdk and as such had to rename a few functions and change
+around some makefile stuff
+	
+RELEASE 0.19
+	
+possibly fixed weird illegal white rook move when it was black's turn
+- please let me know if you see it (chess@bowron.us)
+	
+clear tables option - debug tool
+	
+minimum delay - by request
+	if set, the computer will delay its move until this number of
+	seconds has passed.  Gives human players more time to think
+	and not feel rushed by computer.
+	
+RELEASE 0.18
+	
+fixed poll bug (polling too often) - increases speed of search - you can
+reasonably use a search depth of about 6 now. (default is still 4)
+
+hopefully fixed bug that allowed you to move into check
+
+preview saved games
+
+prompt before overwriting a slot
+
+fixed small bug in slot selection
+
+basic analog controls
+	
+RELEASE 0.17
+
+implemented pondering (still a little sketchy - but seems to be
+working) - OFF by default
+
+cleaned up some compiler warnings
+	
+10 game storage slots
+	
+RELEASE 0.16
+	
+fixed bug in save game
+
+darken board when thinking... 
+	
+automatically load book
+	
+switched to pspsdk beta 1.0
+	
+end game tests (draw by rep, draw by no material, checkmate, stalemate)
+
+RELEASE 0.15
+	
+split distribution into pspchess.zip (binaries only) and
+pspchess_src.zip (with full source)
+
+switched to correct usage of psp-gcc 
+
+added KXploit files to makefile and zip
+	
+decreased default searchdepth to 4
+	
+save/load game - saves to \PSP\GAME\CHESS.SAV - very simplistic
+	
+RELEASE 0.14
+	
+display "Thinking" when thinking of a move
+
+increased default searchdepth to 5
+	
+test about moving into check
+
+compile flag changes (removed -g added -O3) - big speed improvements
+under pspe - don't know for sure about real psp
+	
+switched to pspdev kit with gcc 4.0.0
+	
+RELEASE 0.13
+
+moved everything to makefile
+	
+PIC1.PNG
+	
+background image (can be turned off)
+	
+default setup : WHITE: human, BLACK: psp
+
+display options - you can turn of the options display on main screen 
+	
+extra keys option - you can turn off some of the key processing
+	
+background image for option menu - thanks to Stadi Thompson
+	
+RELEASE	0.12
+	
+debug info option
+	
+option menu (SELECT)
+	
+began adding pondering (psp thinks on your time) (not working yet)
+
+added mswap exploit file creation to create_eboot
+      (MS1/EBOOT.PBP, MS2/EBOOT.PBP)
+	
+RELEASE 0.11
+	
+add in check message
+	
+board flipping option (when enabled the board flips when its blacks move)
+	
+start key = reset game (with confirmation)
+
+fixed home button
+	
+RELEASE 0.10
+	
+bitmap handling code changes
+	
+changed key press code to use skippy's Read_Key()
+	
+inserted code to handle home button press.
+	
+change message about clearing hash tables and switching to search mode
+
+RELEASE 0.09
+	
+pgFancyPrint - cooler looking fonts
+	
+display transposition table hit info during search
+	
+RELEASE 0.08
+	
+new images - thanks to Stadi Thompson
+	
+changed key processing code
+	
+RELEASE 0.07
+	
+g_show_thinking variable (controls whether the computer shows the
+moves it is considering.  toggle with SQUARE+RTRIGGER)  default: off
+	
+removed get_time function, reinstated get_ms function, and changed
+everything to that.  get_ms at this point has only 1 second precision
+but is multiplied by 1000 to make it milliseconds
+
+display status information when clearing hashes (because it takes a while) 
+
+move stdlib implementations into own file (lib.c)
+    - fixed type mismatch between my versions and standard
+	
+RELEASE 0.06
+	
+print out best line during search
+	
+switched to elf2pbp which will now use the correct icon during build
+
+RELEASE 0.05
+
+Added GPL license information 
+
+Added more status information to display
+
+changed some keys (see readme for current setup)
+
+RELEASE 0.04
+	
+display clocks (clocks only change when a move is made)
+	
+display alpha and beta in search display
+	
+change sceCtlRead functions to use 1 as second parameter (that's what
+skippy's library functions use)
+
+removed splash screen
+
+added killers display during search
+	
+RELEASE 0.03
+
+2005-05-19
+
+add board flip when its blacks turn
+move sorting prior to search
+add more information to display during search
+	
+2005-05-18
+
+added a book.
+seeded rng with timer.
