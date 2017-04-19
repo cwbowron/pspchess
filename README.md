@@ -1,8 +1,6 @@
 # pspChess
 
-Copyright 2005 by Christopher Bowron - cwbowron@gmail.com
-
-http://www.bowron.us
+Copyright 2005 by Christopher Bowron - cwbowron@gmail.com - http://www.bowron.us
 
 Based on [Boo's Chess Engine](https://github.com/cwbowron/BCE)
 
