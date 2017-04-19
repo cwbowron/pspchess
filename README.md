@@ -125,4 +125,4 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ### PSPMediaCenter Info (mp3player.c/mp3player.h)
 
-* PSPMediaCenter by John_K & adresd
+PSPMediaCenter by John_K & adresd
