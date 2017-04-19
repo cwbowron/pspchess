@@ -14,9 +14,8 @@ Based on [Boo's Chess Engine](https://github.com/cwbowron/BCE)
 ## Pieces
 
 You can get more images for pieces [here](http://www.dcemu.co.uk/vbulletin/showthread.php?t=8514). If you create your own sets, please share them there.
-Feature Requests and Bug Reports:
 
-## http://forums.ps2dev.org/viewtopic.php?t=1760
+Feature Requests and Bug Reports: http://forums.ps2dev.org/viewtopic.php?t=1760
 
 ## User Interface
 
