@@ -8,8 +8,9 @@ Based on [Boo's Chess Engine](https://github.com/cwbowron/BCE)
 
 ## Dependancies, Credits, Thanks, Etc:
 
-* Uses code from Skippy's psp libraries, pspsdk, mikmod, libmad, libpng and PSPMediaCenter. Thanks to everyone involved in those projects.
-* Images were designed by Stadi Thompson.  Extra big thanks to him for contacting me and volunteering to make them.
+Uses code from Skippy's psp libraries, pspsdk, mikmod, libmad, libpng and PSPMediaCenter. Thanks to everyone involved in those projects.
+
+Images were designed by Stadi Thompson.  Extra big thanks to him for contacting me and volunteering to make them.
 
 ## Pieces
 
