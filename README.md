@@ -3,6 +3,7 @@
 Copyright 2005 by Christopher Bowron - cwbowron@gmail.com - http://www.bowron.us
 
 * Based on [Boo's Chess Engine](https://github.com/cwbowron/BCE)
+* [Changelog](changelog.txt)
 * [Download v0.31](https://github.com/cwbowron/pspchess/releases/download/v0.31/pspchess.zip)
 
 ## Dependancies, Credits, Thanks, Etc:
