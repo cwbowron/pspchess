@@ -1,5 +1,3 @@
-# pspChess
-
 <p align="center">
 <img src="images/logo/pspchess_logo.png">
 </p>
