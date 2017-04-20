@@ -12,7 +12,7 @@ Copyright 2005 by Christopher Bowron - cwbowron@gmail.com - http://www.bowron.us
 <img src="images/logo/screenshot.png">
 </p>
 
-## Dependancies, Credits, Thanks, Etc:
+## Acknowledgements
 
 Uses code from Skippy's psp libraries, pspsdk, mikmod, libmad, libpng and PSPMediaCenter. Thanks to everyone involved in those projects.
 
