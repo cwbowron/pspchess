@@ -8,6 +8,10 @@ Copyright 2005 by Christopher Bowron - cwbowron@gmail.com - http://www.bowron.us
 * [Changelog](changelog.txt)
 * [Download v0.31](https://github.com/cwbowron/pspchess/releases/download/v0.31/pspchess.zip)
 
+<p align="center">
+<img src="images/logo/screenshot.png">
+</p>
+
 ## Dependancies, Credits, Thanks, Etc:
 
 Uses code from Skippy's psp libraries, pspsdk, mikmod, libmad, libpng and PSPMediaCenter. Thanks to everyone involved in those projects.
