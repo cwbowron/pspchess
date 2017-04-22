@@ -13,7 +13,7 @@ Copyright 2005 by Christopher Bowron - cwbowron@gmail.com - http://www.bowron.us
 </p>
 
 Featured in
-* [MakeZine: HOW-TO: Run homebrew apps on your PSP!](http://makezine.com/2008/02/29/howto-run-homebrew-apps-o/)
+* [MAKE: HOW-TO: Run homebrew apps on your PSP!](http://makezine.com/2008/02/29/howto-run-homebrew-apps-o/)
 * [PSP Hacks](https://smile.amazon.com/PSP-Hacks-Mobile-Entertainment-Handheld-ebook/dp/B00NCIWK1Y/) by  C. K. Sample III 
 
 ## Acknowledgements
