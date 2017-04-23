@@ -72,12 +72,7 @@ If you have questions about how to run homebrew games, DO NOT EMAIL or INSTANT M
 
 pspchess.zip contains PSPCHESS%/EBOOT.PBP and PSPCHESS/EBOOT.PBP which are the equivalent of the outputs of KXploit.  
 
-If you have suggestions or bug reports, feel free to email me at chess@bowron.us 
-
 pspChess should be installed under /PSP/GAME/PSPCHESS or things may break.  
-
-FOR THE LOVE OF GOD, DO NOT CALL ME IF YOU CANNOT FIGURE OUT HOW TO INSTALL THE PROGRAM.  SEARCH THE WEB ON PSP HOMEBREW.  READ THE
-README.TXT.  UNDER NO CIRCUMSTANCES SHOULD YOU THINK, HEY I SHOULD JUST CALL UP CHRIS AND ASK HIM. NO. NO. NO.
 
 ## Future Goals
 
