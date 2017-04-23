@@ -26,8 +26,6 @@ Images were designed by Stadi Thompson.  Extra big thanks to him for contacting 
 
 You can get more images for pieces [here](http://www.dcemu.co.uk/vbulletin/showthread.php?t=8514). If you create your own sets, please share them there.
 
-Feature Requests and Bug Reports: http://forums.ps2dev.org/viewtopic.php?t=1760
-
 ## User Interface
 
 Select piece to move using arrows and then press x.  Select destination square using arrows then press x.
@@ -83,7 +81,7 @@ README.TXT.  UNDER NO CIRCUMSTANCES SHOULD YOU THINK, HEY I SHOULD JUST CALL UP 
 
 ## Future Goals
 
-1. I would eventually like to add features to allow pspChess to act as an interface to the Free Internet Chess Server (www.freechess.org) using the wi-fi capabilities of the psp.
+1. I would eventually like to add features to allow pspChess to act as an interface to the [Free Internet Chess Server](http://www.freechess.org) using the wi-fi capabilities of the psp.
 2. I would also like to add 2-player via wifi capabilities so that two users can play each other, each having their own psp.
 	
 ## License 
